@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div class="top-logo">
+        <img src="./images/logof.jpg" alt="Logo">
+        <img src="./images/name.jpg">
+    </div>
+    <div class="top-links">
+        <a href="/Diagnosis System Code File/home.html" class="active">Home</a>
+            <a href="/Diagnosis System Code File/Service.html">Services</a>
+            <a href="/Diagnosis System Code File/Contact.html">Hospitals & Clinics</a>
+            <a href="/Diagnosis System Code File/Pricing.html">Price Transparency</a>
+            <a href="/Diagnosis System Code File/Appoinment.html">Get Appoinment</a>
+            <a href="/Diagnosis System Code File/Login.html">Login</a>
+    </div>
+    <div class="signin">
+        <h2>Login</h2>
+        <form action="login_process.php" method="post">
+            <label for="username" style="display:none;">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            <label for="password" style="display:none;">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            <input type="submit" value="Login" id="login">
+        </form>
+        <a id="forgotPassword" href="#">Forgot Password?</a> <!-- Forgot Password link -->
+        <img id="gifImage" src="images/drgif.gif" alt="GIF Image"> <!-- Add your GIF URL here -->
+    </div>
+
+</body>
+<script>
+    // Function to display the GIF image after 2 seconds
+    setTimeout(function() {
+        document.getElementById('gifImage').style.display = 'block';
+    }, 2000); // 2000 milliseconds = 2 seconds
+</script>
+</html>
